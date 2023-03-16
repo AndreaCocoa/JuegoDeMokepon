@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8" />
+            <title>MOKEPON!</title>
+            <link rel = "stylesheet" href="./styles.css">
+    </head>
+    <body>
+
+        <section id = "seleccionar-mascota">
+            <h1 class = "titulo">MOKEPON! 🔥💦 🌱</h1>
+            <h2 class = "subtitulo">Elige tu mascota:</h2>
+
+            <div id="contenedor-tarjetas" class = "tarjetas">
+                
+            </div>
+
+            <button id = "boton-mascota">Seleccionar</button>
+        </section>
+
+        <section id = "seleccionar-ataque">
+            <h1 class = "titulo">MOKEPON! 🔥💦 🌱</h1>
+
+            <h2 class="subtitulo">Elige un ataque:</h2>
+            <!--notar cómo este h2 es diferente del h2 anterior, pero ambos tienen la misma clase y, por tanto, mismo estilo al llamarlos en css.-->
+            <div id = "contenedor-tarjetas-ataques" class="tarjetas-ataques">
+                <!-- <button id = "boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+                <button id = "boton-agua" class="boton-de-ataque">Agua 💦</button>
+                <button id = "boton-tierra" class="boton-de-ataque">Tierra 🌱</button> -->
+            </div>
+            
+            <div id = "mensajes">
+                <p id="resultado">¡Que empiece el juego!</p>
+                <section id = "reiniciar">
+                    <button id = "boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id = "vidas-jugador">3</p>
+                    <p id = "mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+
+                <div class="ataques-enemigo">
+                    <p id = "vidas-enemigo">3</p>
+                    <p id = "mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+                
+            </div>
+
+            
+        </section>
+
+        
+
+    <script src = "./codigojs/mokepon.js"></script>   
+    </body>
+</html>

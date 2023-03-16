@@ -1,0 +1,144 @@
+/*Este es un SELECTOR de TIPO.
+ h1 {
+    color: lightcoral;}
+
+También hay de CLASE.
+.titulo {
+    color: palegreen;}
+
+y de ID
+  #titulo {
+    color: palegreen;}*/
+  
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    font-family: 'Koulen', cursive;
+    background-color: #0a293d;
+}
+
+
+.titulo {
+    color: #EFEFEF;
+    font-size: 60px;
+}
+
+.subtitulo {
+    color: #EFEFEF;
+    font-size: 30px;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px
+}
+
+.tarjeta-de-mokepon {
+    width: 150px;
+    height: 100px;
+    background: #60adf8;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    display: flex; /* para que texto y mokepon estén uno al lado de otro*/
+    color: #EFEFEF; /*color del texto*/
+    align-items: center;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label{
+    background-color:  #c3d947;
+}
+
+#boton-mascota {
+    width: 112px;
+    height: 44px;
+    background: #b28bf4;
+    border: 2px solid #b28bf4;
+    padding: 2px;
+    margin-top: 30px;
+    box-sizing: border-box; /* que el padding no modifique el tamaño de la cajita*/
+    border-radius: 20px;
+    font-family: 'Koulen', cursive;
+    color: white;
+    font-size: 19px;
+}
+
+
+.tarjeta-de-mokepon img { 
+    /* para evitar poner más clases*/
+    width: 80px;
+}
+
+/* PARA LA SEGUNDA SECCIÓN */
+
+#seleccionar-ataque {
+    display: flex; /*no es necesario porque en JS ya pusimos el flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F9EBEA;
+}
+
+.boton-de-ataque {
+    background-color: #60adf8;
+    border-radius: 28px;
+    border-color: transparent;
+    color: aliceblue;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 116px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: large;
+}
+
+#mensajes {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    background: #b28bf4;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 16px;
+
+}
+
+#boton-reiniciar {
+    border-color: transparent;
+    color: aliceblue;
+    background-color: transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
