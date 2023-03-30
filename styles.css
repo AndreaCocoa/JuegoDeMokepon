@@ -60,7 +60,7 @@ input {
 }
 
 input:checked + label{
-    background-color:  #c3d947;
+    background-color:  #f6ff00; /* <3 <3 <3 <3 <3 */
 }
 
 #boton-mascota {
@@ -150,5 +150,5 @@ input:checked + label{
 }
 
 #mapa {
-    border: 2px solid white
+    border: 2px solid white;
 }
